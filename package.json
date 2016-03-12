@@ -1,0 +1,30 @@
+{
+  "name": "flask-angular-webpack-seed",
+  "version": "1.0.0",
+  "description": "An boilerplate for flask-angular projects using webpack",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install"
+  },
+  "author": "FelixW",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-loader": "^6.1.0",
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.1.18",
+    "grunt": "^0.4.5",
+    "grunt-shell": "^1.2.1",
+    "webpack": "^1.12.14"
+  },
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-route": "^1.5.0",
+    "angular-ui-bootstrap": "^1.2.4",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.1"
+  },
+  "scripts": {
+    "postinstall": "grunt",
+    "prestart": "npm install"
+  }
+}
