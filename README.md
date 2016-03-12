@@ -1,5 +1,5 @@
 # Flask-Angular-ES6-Webpack-Boilerplate
-This is a boilerplate plate project for starting an application with flask and angular using webpack and es6
+This is a boilerplate project for starting an application with flask and angular using webpack and es6
 
 To start the project, clone this repo and run:
 
