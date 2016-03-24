@@ -2,17 +2,16 @@ var grunt = require('grunt');
 
 grunt.initConfig({
     shell: {
-        pythonServer: {
+        watch: {
             options: {
                 stdout: true
             },
             command: [
-              "webpack",
-              'python server.py'
+              "webpack --watch"
             ].join('&&')
         }
     }
 });
 
 grunt.loadNpmTasks('grunt-shell');
-grunt.registerTask('default', ['shell:pythonServer']);
+grunt.registerTask('default', ['shell:watch']);
