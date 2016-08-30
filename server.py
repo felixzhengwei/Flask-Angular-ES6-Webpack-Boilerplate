@@ -1,7 +1,23 @@
 from flask import Flask, render_template
-from flask_webpack import Webpack
 
-webpack = Webpack()
+#Changing jinja templating syntax so that Flask is not confused with angular syntax 
+class CustomFlask(Flask):
+    jinja_options = Flask.jinja_options.copy()
+    jinja_options.update(dict(
+        block_start_string='<%',
+        block_end_string='%>',
+        variable_start_string='%%',
+        variable_end_string='%%',
+        comment_start_string='<#',
+        comment_end_string='#>',
+    ))
+
+def create_app():
+    app = CustomFlask(__name__)
+
+    return app
+
+app = create_app()
 
 def create_app():
     app = Flask(__name__)

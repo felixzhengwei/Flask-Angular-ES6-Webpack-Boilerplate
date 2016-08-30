@@ -3,7 +3,7 @@ This is a boilerplate project for starting an application with flask and angular
 
 To start the project, clone this repo and run:
 ```text
-pip install -r requirement.txt
+pip install -r requirements.txt
 ```
 This will install flask.
 
