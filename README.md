@@ -1,3 +1,5 @@
+# No Longer Supported
+
 # Flask-Angular-ES6-Webpack-Boilerplate
 This is a boilerplate project for starting an application with flask and angular using webpack and es6
 
